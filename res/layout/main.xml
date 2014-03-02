@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >
+
+
+
+    <Button
+        android:id="@+id/button_VolumeUp"
+        android:layout_width="63dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="05dp"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/transparent"
+        android:text="              " />
+    
+    <Button
+        android:background="@android:color/transparent"
+        android:id="@+id/button_VolumeDown"
+        android:layout_width="63dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/button_VolumeUp"
+        android:layout_below="@+id/button_VolumeUp"
+        android:layout_marginTop="26dp"
+        android:text="              " />
+
+    <Button
+        android:background="@android:color/transparent"
+        android:id="@+id/button_Scan"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/button_VolumeDown"
+        android:layout_below="@+id/button_Volumedown"
+        android:layout_marginTop="150dp"
+        android:text="                     " />
+
+    <Button
+        android:background="@android:color/transparent"
+        android:id="@+id/button_Brightness"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/button_Scan"
+        android:layout_below="@+id/button_Scan"
+        android:layout_marginTop="18dp"
+        android:text="                     " />
+
+    <ImageView
+        android:id="@+id/arror_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="184dp"
+        android:layout_marginTop="51dp"
+        android:src="@drawable/arror" />
+    
+    <EditText
+        android:id="@+id/ReadValues"
+        android:background="@android:color/transparent"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/button_VolumeDown"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="0dp"
+        android:textColor="@android:color/black"
+        android:textSize="45sp"
+        android:ems="10" 
+        android:focusableInTouchMode="false"/>
+    
+    <EditText
+        android:id="@+id/ReadValues1"
+        android:background="@android:color/transparent"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/button_Scan"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="0dp"
+        android:textColor="#999999"
+        android:textSize="45sp"
+        android:ems="10" 
+        android:focusableInTouchMode="false"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:progressDrawable="@drawable/barbgimg"
+        />
+
+</RelativeLayout>
